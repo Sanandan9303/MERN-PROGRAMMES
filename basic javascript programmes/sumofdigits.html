@@ -1,0 +1,37 @@
+<!--do while loop - defined & undefined condition based program
+
+it always executes one time 
+syntex-: do{
+             -------
+             -------
+             statment;
+             loop controlling
+            }
+             while(condition);-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do while loop</title>
+    <script>
+        function show(){
+            var i=101,h,t,u,sum;
+            do{
+                h=parseInt(i/100);
+                t=parseInt((i/10)%10);
+                u=parseInt(i%10);
+             sum=(u*100)+(t*10)+(h*1);
+              if(i==sum){
+                document.write(i+"<br>");
+              }
+              i++;
+            }
+            while(i<=200);
+            }
+    </script>
+</head>
+<body>
+    <button onclick="show()">show</button>
+</body>
+</html>

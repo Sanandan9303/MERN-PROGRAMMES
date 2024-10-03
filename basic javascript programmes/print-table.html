@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop second</title>
+    <script>
+        function tablefun() {
+            var i,n,t;
+            n=parseInt(document.getElementById("tb1").value);
+            for(i=1;i<=10;i++){
+                t=n*i;
+                document.write(t+"<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>enter value of n <input type="text" id="tb1"></p>
+    <button type="submit" onclick="tablefun()">Show</button>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        function factorial(){
+        var i,n,t=1;
+        n=parseInt(document.getElementById("tb1").value);
+        for(i=n;i>0;i--){
+            t=t*i;
+        }document.write(t+"<br>");
+        }
+    </script>
+</head>
+<body>
+    <p>enter value of n <input type="text" id="tb1"></p>
+    <button type="submit" onclick="factorial()">Show</button>
+</body>
+</html>

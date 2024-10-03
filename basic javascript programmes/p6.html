@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function main()
+        {
+            var n=parseInt(prompt("Enter any number"));
+            var factorial;
+            factorial=fact(n);
+            alert(factorial);
+        }
+        function fact(n)
+        {
+            var fact=1;
+            while(n>0)
+        {
+            fact=fact*n;
+            n--;
+        }
+        return(fact);
+        }
+    </script>
+</head>
+<body>
+    <button type="submit" onclick="main()">
+show
+    </button>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function smallcap()
+        {
+        var str;
+        var newstr="";
+        str=document.getElementById("tb1").value;
+        newstr+=str[0].toUpperCase();
+        for(i=1;i<str.length;i++)
+        {
+            if(str[i]==' ')
+        {
+            newstr+=str[i];
+            newstr+=str[i+1].toUpperCase();
+            i++;
+        }
+        else{
+            newstr+=str[i];
+        }
+        }
+        document.getElementById("tb2").value=newstr;
+    }
+    </script>
+</head>
+<body>
+    <p>enter sentence <input type="text" id="tb1"></p>
+    <p>result <input type="text" id="tb2"></p>
+    <button onclick="smallcap()"> channge</button>
+    
+</body>
+</html>

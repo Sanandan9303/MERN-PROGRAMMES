@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check vowel consonent using switch</title>
+    <script>
+
+        function checkvowel() {
+            var ch =document.getElementById("tb1").value;
+            switch (ch) {
+                case 'a':
+                    alert("vowel");
+                    break;
+
+                case 'e':
+                    alert("vowel");
+                    break; 
+
+                case 'i':
+                    alert("vowel");
+                    break; 
+
+                case 'o':
+                    alert("vowel");
+                    break; 
+               
+                case 'u':
+                    alert("vowel");
+                    break; 
+
+                default:
+                    alert("consonent");
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <table border="1">
+            <tr><td>charactor</td>
+                <td><input type="text" id="tb1" placeholder="enetr charector"></td>
+            </tr>  
+            <tr>
+                <td> <button type="submit" onclick="checkvowel()">submit</button></td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

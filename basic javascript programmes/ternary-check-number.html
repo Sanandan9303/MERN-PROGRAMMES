@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program using ternary oprators</title>
+    <script>
+       function checknumber(){
+        var num =parseInt(document.getElementById("tb1").value);
+
+        num>0?alert("positive"):alert("negative");
+       }
+    </script>
+</head>
+<body>
+    <center>
+        <table border="1">
+            <tr><td>the number</td>
+                <td><input type="text" id="tb1" placeholder="enter number"></td>
+            </tr>
+            <tr>
+                <td> <button type="submit" onclick="checknumber()">submit</button></td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

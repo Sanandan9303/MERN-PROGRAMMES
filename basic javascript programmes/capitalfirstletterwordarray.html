@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function capitalname()
+        {
+            var name=["raj","deepak","sanandan","prem","munshi"];
+            var newname=[];
+            for(i=0;i<name.length;i++)
+        {
+            var nstr=name[i][0].toUpperCase();
+            for(j=1;j<name[i].length;j++)
+        {
+            nstr+=name[i][j];
+        }
+        newname[i]=nstr;
+        }
+        document.write(newname);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="capitalname()"> show </button>
+    
+</body>
+</html>

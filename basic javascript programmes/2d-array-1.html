@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D array</title>
+    <script>
+        function show(){
+            var a=[[1,8,9,4],[3,5,7,9],[2,9,8,6]];
+            var i,j;
+
+            for(i=0;i<a.length;i++){
+                for(j=0;j<a[i].length;j++){
+                    document.write(a[i][j]+" ");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button type="submit" onclick="show()">show</button>
+</body>
+</html>

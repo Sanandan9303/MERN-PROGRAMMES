@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count the number of vowel in the string</title>
+    <script>
+      function show(){
+        var name=document.getElementById("tb1").value;
+        var nameArray = name.split(''); 
+        var start,end;
+        start=0;
+        end=nameArray.length-1;
+        while(start<end){
+            var temp=nameArray[start];
+            nameArray[start]=nameArray[end];
+            nameArray[end]=temp;
+            start++;
+            end--;
+        }
+         document.getElementById("tb2").value=nameArray;
+      }
+      function reversesimple(){
+        var name=document.getElementById("tb1").value;
+        var i,reverse=' ';
+        for(i=name.length-1;i>=0;i--){
+           reverse+=name[i];
+        } document.getElementById("tb2").value=reverse;
+      }
+    </script>
+</head>
+<body><center>
+    <table>
+        <tr>
+        <td>
+         sentance 
+        </td>
+        <td><input type="text" id="tb1"></td></tr>
+        <tr>
+        <td>result</td>
+        <td><input type="text" id="tb2"></td>
+    </tr>
+    <tr>
+        <td><button type="submit" onclick="reversesimple()">submit</button></td>
+    </tr>
+    </table>
+</center>
+</body>
+</html>

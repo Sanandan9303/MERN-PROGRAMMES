@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count the number of vowel in the string</title>
+    <script>
+      function show(){
+        var name=document.getElementById("tb1").value;
+        var i,count=0;
+        for(i=0;i<name.length;i++){
+            if(name[i]=='a'||name[i]=='e'||name[i]=='i'||name[i]=='o'||name[i]=='u'){
+                count++;
+            }
+        } document.getElementById("tb2").value=count;
+      }
+    </script>
+</head>
+<body><center>
+    <table>
+        <tr>
+        <td>
+         sentance 
+        </td>
+        <td><input type="text" id="tb1"></td></tr>
+        <tr>
+        <td>result</td>
+        <td><input type="text" id="tb2"></td>
+    </tr>
+    <tr>
+        <td><button type="submit" onclick="show()">submit</button></td>
+    </tr>
+    </table>
+</center>
+</body>
+</html>

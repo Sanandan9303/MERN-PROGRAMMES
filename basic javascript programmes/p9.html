@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function main()
+        {
+            var result;
+            result=great();
+            document.write(result+" is greatest");
+
+        }
+        function great()
+        {
+            var a,b,c;
+            a=parseInt(document.getElementById("t1").value);
+            b=parseInt(document.getElementById("t2").value);
+            c=parseInt(document.getElementById("t3").value);
+
+            if(a>b)
+        {
+            if(a>c)
+        {
+            return(a);
+        }
+        else
+        {
+            return(c);
+        }
+        }
+        else
+        {
+            if(b>c)
+        {
+            return(b);
+        }
+        else
+        {
+            return(c);
+        }
+        }
+       }
+    </script>
+</head>
+<body>
+    <center>
+        <table border="1">
+            <tr>
+                <td>enter value of a</td>
+                <td><input type="text" id="t1"></td>
+            </tr>
+            <tr>
+                <td>enter value of b</td>
+                <td><input type="text" id="t2"></td>
+            </tr>
+            <tr>
+                <td>enter value of c</td>
+                <td><input type="text" id="t3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" onclick="main()"> show</button></td>
+            </tr>
+            
+
+
+
+
+        </table>
+    </center>
+</body>
+</html>

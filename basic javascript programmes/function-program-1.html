@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial of number using function type -3</title>
+    <script>
+        function factorial(num){
+            var i,fact=1;
+            for(i=num;i>0;i--){
+                fact=i*fact;
+            }
+            return fact;
+        }
+    function mainfun(){
+        var num,res;
+       num=parseInt(prompt("enter a number"));
+       res=factorial(num);
+       alert(res);
+     }
+    </script>
+</head>
+<body>
+    <button type="submit" onclick="mainfun()"></button>
+</body>
+</html>

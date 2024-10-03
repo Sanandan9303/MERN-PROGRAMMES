@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function perfectNumber(){
+            var num,i=1,s=0;
+            num=parseInt(prompt("enter the number"));
+            while(i<num){
+                if(num%i==0){
+                 s+=i;
+                }i++;
+            } 
+            if(num==s){
+                alert("number is a perfect number");
+            }
+            else{
+                alert("number is not a perfect number");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="perfectNumber()">show</button>
+</body>
+</html>

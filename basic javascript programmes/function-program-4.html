@@ -1,0 +1,38 @@
+<!--function - a function is a set of instruction to perform aspecific task repeatly
+
+types of function
+predefined function
+userdefined function
+
+userdefined function of four types
+1.function with no argument no return
+2. function with argument no return
+3. function no argument with return
+4. function with argument with return type
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> function with argument with return</title>
+    <script>
+            function sumfun(a,b){
+               var c;
+               c=a+b;
+               return(c);
+            }
+         function mainfun(){
+            var a,b,res;
+            a=parseInt(prompt("enter the value of a"));
+            b=parseInt(prompt("enter the value of b"));
+            res=sumfun(a,b);
+            alert("sum of a and b is ="+res);
+         }
+    </script>
+</head>
+<body>
+    <button type="submit" onclick="mainfun()"> show</button>
+</body>
+</html>

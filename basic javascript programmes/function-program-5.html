@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse of an number using fun-3</title>
+    <script>
+        function reverse(num){
+        var rem ,rev=0;
+        while(num>0){
+            rem=num%10;
+            rev=(rev*10)+rem;
+            num=parseInt(num/10);
+        } 
+        return rev;
+        }
+     function mainfun(){
+       var num,res;
+       num=parseInt(prompt("enter a number to reverse"));
+       alert("reverseof numbers is ="+reverse(num));
+     }
+    </script>
+</head>
+<body>
+    <button type="submit" onclick="mainfun()">show</button>
+</body>
+</html>

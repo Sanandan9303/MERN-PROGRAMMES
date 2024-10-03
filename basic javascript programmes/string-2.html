@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show(){
+            var str=document.getElementById("tb1").value;
+            var i,c=1;
+            for(i=0;i<str.length;i++){
+                if(str[i]==" "){
+                    c=c+1;
+                }
+            } document.getElementById("tb2").value=c;
+        }
+    </script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>input
+                <input type="text" id="tb1">
+            </td>
+        </tr>
+        <tr>
+            <td>result
+           
+                <input type="text" id="tb2">
+            </td>
+        </tr>
+        <tr> <td>
+            <button type="submit" onclick="show()">submit</button>
+        </td>
+        </tr>
+    </table>
+</body>
+</html>

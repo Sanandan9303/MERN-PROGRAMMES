@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function show()
+        {
+            var emp = [{
+                ecode:101,
+                ename:"sanandan",
+                esal:100000
+            },
+             {
+                ecode:102,
+                ename:"sumit",
+                esal:21544
+            },
+             {
+                ecode:103,
+                ename:"amit",
+                esal:74587
+            },
+             {
+                ecode:104,
+                ename:"nancy",
+                esal:87434
+            },
+             {
+                ecode:105,
+                ename:"nindra",
+                esal:34563
+            }];
+            var code=parseInt(document.getElementById("tb1").value);
+            var found=false;
+            for(i=0;i<emp.length;i++)
+            {
+                if(emp[i].ecode==code)
+            {
+                document.write("employee code "+emp[i].ecode+"<br>")
+                document.write("employee name "+emp[i].ename+"<br>")
+                document.write("employee salary "+emp[i].esal+"<br>")
+                found=true;
+                break;
+            }
+            emp.map((item)=>{
+                document.write(item.ecode+" "+item.ename+""+item.esal+""+"<br>")
+            });
+        }
+        if(found==false)
+        {
+            alert("data not found");
+        }
+            
+        }
+    </script>
+</head>
+<body>
+    <p>enter employee code <input type="number" id="tb1"></p>
+    <button onclick="show()"> show </button>
+    
+</body>
+</html>

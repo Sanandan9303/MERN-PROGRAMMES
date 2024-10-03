@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function show(id)
+        {
+            if(id=="img1")
+        {
+            document.getElementById("tb1").value="clicked on jasprit bumrah";
+        }
+        if(id=="img2")
+        {
+            document.getElementById("tb1").value="clicked on rohit sharma ";
+        }
+        if(id=="img3")
+        {
+            document.getElementById("tb1").value="clicked on bret lee";
+        }
+
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <img onclick="show(this.id)" id="img1" height="100px" width="100px" src="https://documents.iplt20.com/ipl/IPLHeadshot2024/9.png" alt=""><img onclick="show(this.id)" id="img2" height="100px" width="100px" src="https://www.pngguru.in/storage/uploads/images/rohit-sharma-in-new-jersey-free-png-image_1717241533_437827757.webp" alt=""><img onclick="show(this.id)" id="img3" height="100px" width="100px" src="https://static-files.cricket-australia.pulselive.com/headshots/288/1641-camedia.png" alt="">
+        <textarea name="" id="tb1"></textarea>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function usercheck()
+        {
+            var userid=document.getElementById("tb1").value;
+            var userpass=document.getElementById("tb2").value;
+
+            if(userid=="admin" && userpass=="sanandan")
+        {
+            alert("welcome")
+        }
+        else{
+            alert("Invalid Id or password")
+        }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h4>LOGIN FORM</h4>  +
+    </center>
+    <table border="1">
+        <tr>
+            <td>USER ID</td>
+            <td>
+                <input type="text" id="tb1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                USER PASSWORD
+            </td>
+            <td>
+                <input type="password" id="tb2">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="usercheck()"> LOGIN </button>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

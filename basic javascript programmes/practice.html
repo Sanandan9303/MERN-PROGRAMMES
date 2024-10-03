@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function smallcap()
+        {
+            var str=["raj","mohan","sohan","preeti","shrishti"];
+            var newname=[];
+            for(i=0;i<str.length;i++)
+        {
+            var nstr=str[i][0].toUpperCase();
+            for(j=1;j<str[i].length;j++)
+        {
+            nstr+=str[i][j];
+        }
+        newname[i]=nstr;
+        }
+        document.write(newname);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="smallcap()"> show </button>
+    
+</body>
+</html>

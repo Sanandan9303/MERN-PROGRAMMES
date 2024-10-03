@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+    <script>
+     function calcfun(){
+        var a,b,c,choice;
+        a=parseInt(document.getElementById("tb1").value);
+        b=parseInt(document.getElementById("tb2").value);
+        choice=document.getElementById("ddc").value;
+
+        switch (choice) {
+            case "+":
+                c=a+b
+                document.getElementById("tb4").value=c;
+                break;
+
+            case "-":
+                c=a-b
+                document.getElementById("tb4").value=c;
+                break;
+
+            case "*":
+                c=a*b
+                document.getElementById("tb4").value=c;
+                break;
+
+            case "/":
+                c=a/b
+                document.getElementById("tb4").value=c;
+                break;
+
+            case "%":
+                c=a%b
+                document.getElementById("tb4").value=c;
+                break;
+        
+            default:
+                document.getElementById("tb4").value="please select an oprator"
+                break;
+        }
+     }
+
+    </script>
+</head>
+<body>
+    <center>
+        <table border="1">
+            <tr><td>first number</td>
+                <td><input type="text" id="tb1" placeholder="enetr first number"></td>
+                </tr>
+            <tr>
+               <td>second number </td>
+               <td><input type="text" id="tb2" placeholder="enter second number"></td>
+            </tr> 
+            <tr>
+                <td>select</td>
+              <td>   <select name="ddc" id="ddc">
+                <option value="default">please select a oprator</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select></td>
+            </tr>  
+            <tr>
+                <td>res:</td>
+                <td> <input type="text" id="tb4"></td>
+            </tr>  
+            <tr>
+                <td> <button type="submit" onclick="calcfun()">submit</button></td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

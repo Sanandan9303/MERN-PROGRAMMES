@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>controlling while-loop by user input</title>
+    <script>
+        function show(){
+            var a,b,c,ch=1;
+
+            while(ch==1){
+                a=parseInt(prompt("enter val of a"));
+                b=parseInt(prompt("enter val of b"));
+                c=a+b;
+                alert("sum of a and b is"+c);
+                ch=parseInt(prompt("press 1 to process again"));
+            }
+        }
+    </script>
+</head>
+<body>
+    <button type="submit" onclick="show()">Show</button>
+</body>
+</html>

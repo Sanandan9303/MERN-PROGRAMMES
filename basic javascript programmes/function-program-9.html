@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print table of number</title>
+    <script>
+        function toprintTable(num){
+           var i,table=0;
+           for(i=1;i<=10;i++){
+             table=num*i;
+             document.write(table+"<br>");
+           }
+        }
+        function mainfun(){
+            var num=parseInt(prompt("enter a number to print table"));
+            toprintTable(num);
+        }
+    </script>
+</head>
+<body>
+    <button type="submit" onclick="mainfun()">show</button>
+</body>
+</html>

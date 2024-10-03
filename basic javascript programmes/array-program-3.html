@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to print prime numbers</title>
+    <script>
+        function show() {
+            var a = [4, 7, 8, 9, 5, 67, 34, 23, 97, 56];
+            var i, j, count;
+            var resultElement = document.getElementById("result");
+
+            for (i = 0; i < a.length; i++) {
+                count = 0;
+                for (j = 2; j <= Math.sqrt(a[i]); j++) {
+                    if (a[i] % j == 0) {
+                        count++;
+                        break;
+                    }
+                }
+                if (count == 0 && a[i] > 1) {
+                    resultElement.innerHTML += a[i] + " ";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <button type="submit" onclick="show()">Submit</button>
+    <p id="result"></p>
+</body>
+</html>

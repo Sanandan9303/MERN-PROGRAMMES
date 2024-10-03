@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function main()
+        {
+            fibfun();
+        }
+        function fibfun()
+        {
+            var n=parseInt(document.getElementById("tb1").value);
+            var f=0,s=1,t;i=1;
+            document.write(f+"<br>");
+            document.write(s+"<br>");
+            for(i=1;i<=n;i++)
+        {
+            t=f+s;
+            document.write(t+"<br>")
+            f=s;
+            s=t;
+        }
+        }
+    </script>
+</head>
+<body>
+    <tr>
+        <td>
+            Enter number of terms you want
+        </td><td>
+        <input type="text" id="tb1">
+    </td></tr>
+    <tr>
+        <td>
+
+        </td>
+        <td>
+            <button type="submit" onclick="main()">show</button>
+        </td>
+    </tr>
+</body>
+</html>

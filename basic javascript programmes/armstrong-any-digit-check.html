@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second program</title>
+    <script>
+        function show(){
+            var i = 1, n, t, j, sum, num, count, r;
+            n = parseInt(document.getElementById("tb1").value);  // Get value of n once
+
+            do {
+                num = i;
+                count = 0;
+                
+                // Count the number of digits in the current number (i)
+                do {
+                    count = count + 1;
+                    num = parseInt(num / 10);
+                } while (num > 0);
+                
+                // Reset sum and num for the next loop
+                sum = 0;
+                num = i;
+                
+                // Calculate the Armstrong number
+                do {
+                    r = num % 10;
+                    t = 1;
+                    j = 1;
+                    
+                    // Calculate r^count
+                    do {
+                        t = t * r;
+                        j++;
+                    } while (j <= count);
+                    
+                    sum = sum + t;
+                    num = parseInt(num / 10);
+                } while (num > 0);
+                
+                // Check if the number is an Armstrong number
+                if (i == sum) {
+                    document.write(i + "<br>");
+                }
+                i++;
+
+            } while (i <= n);
+        }
+    </script>
+</head>
+<body>
+    <p>Enter value of n: <input type="text" id="tb1"></p>
+    <button type="submit" onclick="show()">Submit</button>
+</body>
+</html>

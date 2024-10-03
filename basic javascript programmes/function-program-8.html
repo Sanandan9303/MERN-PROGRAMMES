@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print fibbonaccci series using type - 1</title>
+    <script>
+        function fibbonacciseries(){
+            var a=0,b=1,c=0,term;
+            term=parseInt(prompt("enter the term"));
+            while(term>0){
+                c=a+b;
+                document.write(a+" ");
+                a=b;
+                b=c;
+                term--;
+            }
+        }
+        function mainfun(){
+            var res;
+           res=fibbonacciseries();
+        }
+    </script>
+</head>
+<body>
+    <button type="submit" onclick="mainfun()">submit</button>
+</body>
+</html>
